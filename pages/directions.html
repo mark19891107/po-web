@@ -1,0 +1,60 @@
+---
+layout: default
+permalink: /directions
+---
+
+<div class="container head-block">
+    <div class="row">
+        <div class="col-12">
+            <h2 style="margin:180px 0 160px;text-align: center">
+                開放政府聯絡人實施要點
+            </h2>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="margin-bottom:200px">
+    {%- for direction in site.data.directions -%}
+    <div class="row">
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="num">{{forloop.index}}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>
+                        {{direction.title}}
+                    </h4>
+                    {%- for point in direction.points -%}
+                    <div class="bodycopy">
+                        {{point}}
+                    </div>
+                    {%- endfor -%}
+                </div>
+            </div>
+
+            <hr class="black thin">
+
+            <div class="row">
+                <div class="col-lg-3 col-xl-2">
+                    <h5>立法理由</h5>
+                </div>
+                <div class="col-lg-9 col-xl-10">
+                    <div class="bodycopy">
+                        {{direction.reason}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if forloop.last == false %}
+        <div class="col-md-12">
+            <hr class="black">
+        </div>
+        {% endif %}
+    </div>
+    {%- endfor -%}
+</div>

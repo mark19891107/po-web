@@ -1,0 +1,14 @@
+.footer{
+    height: 300px;
+    padding-top: 100px;
+    background: #1838c5;
+}
+
+.footer .logo{
+    height: 30px;
+    width: auto;
+}
+
+.footer p,.footer a,.footer a:hover{
+    color: #f2b9c5;
+}

@@ -1,0 +1,128 @@
+---
+layout: default
+permalink: /opengov
+---
+
+<div class="hero3-back">
+    <div class="container hero3">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2" style="text-align: center">
+                <h1>
+                    {{site.data.opengov.what-is-open-gov.title}}
+                </h1>
+                <h4>
+                    {{site.data.opengov.what-is-open-gov.content}}
+                </h4>
+            </div>
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                <div class="link">
+                    <a href="{{site.data.opengov.what-is-open-gov.link}}">{{site.data.opengov.what-is-open-gov.link}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top:140px;margin-bottom:90px;" class="section-center">
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-10 no-padding">
+                <h1 style="margin-bottom:80px">
+                    {{site.data.opengov.open-gov-4-points.title}}
+                </h1>
+                <p class="bodycopy" style="text-align: justify">
+                    {{site.data.opengov.open-gov-4-points.content}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2 offset-lg-5 col-md-4 offset-md-4 no-padding">
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top:60px;margin-bottom:140px;text-align: center;">
+    <div class="container">
+        {%- for point in site.data.opengov.open-gov-4-points.points -%}
+        {% capture modulo %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
+
+        {% if modulo == '0' %}
+        <div class="row justify-content-around">
+            {%- endif -%}
+            <div class="col-md-4 no-padding point">
+                <img src="https://via.placeholder.com/350" alt="">
+                <h3>{{point.title}}</h3>
+                <div class="bodycopy">
+                    {{point.content}}
+                </div>
+            </div>
+            {% if modulo == '1' %}
+        </div>
+        {%- endif -%}
+
+        {%- endfor -%}
+    </div>
+</div>
+
+<div style="padding-top:140px;padding-bottom:140px;background:rgb(83,234,208)">
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-10 no-padding">
+                <h1 style="margin-bottom:80px;text-align: center">
+                    {{site.data.opengov.why-open-gov.title}}
+                </h1>
+                <div class="bodycopy">
+                    {{site.data.opengov.why-open-gov.content}}
+                </div>
+                <img style="width:100%; margin-top:50px" src="https://upload.wikimedia.org/wikipedia/commons/0/02/Open_government_schema.jpg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="padding-top:140px;padding-bottom:140px;background:white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-10 offset-md-1 offset-lg-0 no-padding">
+                <h1>
+                    {{site.data.opengov.how-open-gov.title}}
+                </h1>
+                <div class="bodycopy" style="margin-top:80px;margin-bottom:20px">
+                    {{site.data.opengov.how-open-gov.content}}
+                </div>
+            </div>
+            <div class="offset-lg-1 col-lg-5 col-md-10 offset-md-1 offset-lg-0 no-padding">
+                <img style="width:100%;" src="https://images.unsplash.com/photo-1534841645203-8843b9ac9737?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=be005befe9f504b60b5a926f0dc9d7b5&auto=format&fit=crop&w=1650&q=80"
+                    alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="padding-top:140px;padding-bottom:140px;background:rgb(83,234,208)">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5 col-md-10 offset-md-1 offset-lg-0 no-padding">
+                <img style="width:100%;" src="https://images.unsplash.com/photo-1534841645203-8843b9ac9737?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=be005befe9f504b60b5a926f0dc9d7b5&auto=format&fit=crop&w=1650&q=80"
+                    alt="">
+            </div>
+            <div class="col-lg-6 col-md-10 offset-md-1 offset-lg-0 no-padding">
+                <h1>
+                    {{site.data.opengov.who-open-gov.title}}
+                </h1>
+                <div class="bodycopy" style="margin-top:80px;margin-bottom:100px">
+                    {{site.data.opengov.who-open-gov.content}}
+                </div>
+                <a href="/po" class="button">
+                    開放政府聯絡人 <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

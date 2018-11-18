@@ -1,0 +1,18 @@
+.navbar {
+    height: 70px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.nav-link {
+    font-size: 15px;
+    letter-spacing: 0.075em;
+    padding: 23px 5px;
+    margin: 0px 10px;
+    height: 70px;
+    color: black;
+}
