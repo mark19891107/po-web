@@ -8,16 +8,23 @@
     padding-top:70px;
     display: flex;
     flex-direction: column;
+}
+
+.hero-back{
     background-image: url("/assets/images/background.png");
     background-size: cover;
     background-position-x: center;
+    background-color: rgb(130,242,222)
 }
 
 .hero2{
-    height: 100vh;
     padding-top:70px;
     display: flex;
     flex-direction: column;
+}
+
+.hero2>.row:first-child{
+    height: 100vh;
 }
 
 .hero3{
@@ -62,10 +69,12 @@ hr.black{
     border-top: 5px solid rgb(53,136,236);
 }
 
-.hero2-back{
-    background-image: url("/assets/images/background.png");
+.hero2-back {
+    background-image: url(/assets/images/background.png);
     background-size: cover;
+    background-color: #ffffffcc;
     background-position-x: center;
+    background-blend-mode: overlay;
 }
 
 .hero .row ,.hero2 .row {
@@ -77,7 +86,6 @@ hr.black{
     width: 100vw;
     height: calc(50% - 35px);
     position: absolute;
-    top: calc(50% + 35px);
     left: 0%;
     background: #ffff00db;
     z-index: 0;
@@ -88,15 +96,14 @@ hr.black{
     z-index: 999;
 }
 
-.hero .highlight{
-    padding-top: 30px;
-    padding-bottom: 30px;
+.hero .highlight:before{
+    content:"";
+    width: 100%;
+    position: absolute;
+    height: calc(50% - 35px);
     background: #ffffffcc;
+    left: 0;
 }
-
-/* body{
-    background-color: #64d8b2;
-} */
 
 h1 {
     font-weight: 700;
@@ -145,7 +152,7 @@ h5 {
 }
 
 .point .bodycopy{
-    text-align: justify;margin: 0px;
+    margin: 0px;
 }
 
 .point img{
@@ -157,10 +164,6 @@ h5 {
 .point h3{
     margin-top:30px;
     margin-bottom:50px
-}
-
-.section-center{
-    text-align: left;
 }
 
 .button{
@@ -186,6 +189,28 @@ h5 {
 #tools .no-padding{
     padding: 0;
 }
+
+.section-yellow{
+    background:rgb(242,245,33);
+}
+
+.section-gray{
+    background: rgb(245,245,245);
+}
+
+.section{
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+.section-segment{
+    margin: 45px auto;
+}
+
+.section-space{
+    margin-bottom: 40px;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
@@ -235,6 +260,14 @@ h5 {
 /* // Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+    .hero2{
+        height: 100vh;
+    }
+
+    .hero2>.row:first-child{
+        height: auto;
+    }
+
     .point .bodycopy{
         text-align: justify;margin: 0px -30px;
     }
@@ -246,6 +279,9 @@ h5 {
     }
     .hero2>.row:last-child:after{
         left: 33%;
+        width: 67%;
+    }
+    .hero .highlight:before{
         width: 67%;
     }
     .button{
@@ -277,12 +313,25 @@ h5 {
 
 @media (min-width: 992px) {
 
-    .section-center{
-        text-align: center;
+    .section{
+        padding-top:140px;
+        padding-bottom:140px;
+    }
+    
+    .section-segment{
+        margin: 90px auto;
+    }
+    
+    .section-space{
+        margin-bottom: 80px;
     }
 
     .hero2>.row:last-child:after{
         left: 50%;
+        width: 50%;
+    }
+
+    .hero .highlight:before{
         width: 50%;
     }
 }
