@@ -1,8 +1,9 @@
 what-is-open-gov: 
   title: 什麼是開放政府？
-  content: OGP開放政府宣言：開放政府是一個叫做OGP的國際組織提出來的～我們來看看他們當時是怎麼說的：
+  content: 開放政府是由叫做OGP（Open Government Partnership，開放政府夥伴關係）的國際組織所提出來的：
   link: https://www.opengovpartnership.org/open-government-declaration
-
+  link-content: 「......秉持開放之價值與公民接觸，以改善服務、管理公共資源、推動創新及建構更安全之社區。懷抱透明及開放政府之原則，於自己國家與日益緊密連結的世界，實現繁榮、福祉及符合人類尊嚴之社會。......」
+  content2: 開放政府的四大願景，也就是我們期待的未來，是一個透明的政府、參與的政府、課責的政府和涵容的政府。
 
 open-gov-4-points:
   title: 開放政府的四個要素
