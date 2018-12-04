@@ -1,44 +1,82 @@
 ---
 layout: default
-permalink: /meeting-process
+permalink: /meeting
 ---
 
-
-<div class="container head-block">
-    <div class="row">
-        <div class="col-12">
-            <h2 style="margin:180px 0 120px;text-align: center">
-                協作會議流程
-            </h2>
+<div class="section" style="background:rgb(88,159,240)">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5 no-padding">
+                <h1 class="section-space">
+                    協作會議是什麼？
+                </h1>
+                <p class="bodycopy">
+                    我們有了開放政府的理念 （透明、參與、課責、涵容），也有了推動開放政府的種子人員（PO）以後，究竟要怎麼做呢？我們選擇的方式叫做「協作會議」。
+                    <br><br>
+                    有別於傳統的會議形式，協作會議更像工作坊，針對提出的議題，PDIS和主辦部會共同規劃會議流程，並邀請與議題相關的多方利害關係人一起發想可行方案，並在會議結束後隔週一，由政委在政務會上報告協作會議產出。
+                </p>
+            </div>
+            <div class="col-lg-5 no-padding">
+                <img class="img-fluid" src="https://via.placeholder.com/650x700" alt="">
+            </div>
         </div>
     </div>
 </div>
 
-<div class="row" style="margin:0 0 120px">
-    <div class="container" id="process">
-        {%- for process in site.data.meeting.process -%}
-        {% capture modulo %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
-        <div class="row">
-            <div class="col-md-12" style="text-align:center;padding:40px 0 60px ;background: white">
-                <h1 style="color:rgb(53,137,237)">{{forloop.index}}</h1>
-                <h2 style="color:rgb(53,137,237)">{{process.title}}</h2>
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5 no-padding">
+                <img class="img-fluid" src="https://via.placeholder.com/650x450" alt="">
             </div>
-        </div>
-        {%- if modulo == '0' -%}
-        <div class="row justify-content-around">
-        {%- else -%}
-        <div class="row justify-content-around flex-sm-row-reverse">
-        {%- endif -%}
-            <div class="col-md-4 no-padding">
-                <img style="width:100%;" src="https://images.unsplash.com/photo-1534841645203-8843b9ac9737?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=be005befe9f504b60b5a926f0dc9d7b5&auto=format&fit=crop&w=1650&q=80"
-                    alt="">
-            </div>
-            <div class="col-md-4 no-padding">
+            <div class="col-lg-5 no-padding">
                 <div class="bodycopy">
-                    {{process.content}}
+                    「協作」到底是什麼呢？「協作」是：每個人的理念、目標都不相同，但是都想要討論出同一個議題的解決方案。這樣開會最終會達到的是：「這個結論雖然不是我最想要的結果，但並沒有違背我的理念，所以還算能接受」。在這個前提下，所有人可以一起尋找解決方式，創造出「協作」的空間。
+                    <br><br>
+                    值得注意的是，實踐開放政府有各式各樣的方法和工具，我們只是選了其中一種，無所謂好壞。無論任何形式，最重要的仍然是透明、參與、課責及涵容這四個開放政府的精神。
                 </div>
             </div>
         </div>
-        {%- endfor -%}
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5 no-padding">
+                    <h3>協作會議的目的</h3>
+                    <div class="bodycopy section-space">
+                        協作會議是一個定期會議平臺，希望協助每個公共議題的主辦機關聽取多元意見，創造機關和機關之間、機關和民眾間更多的對話機會。透過協作，公部門的朋友和大眾可以一起釐清議題，儘可能尋找可行的解決方案。透過實作，也能讓各部會逐步熟悉開放政府精神，並善用相關政策思維、設計與工具。
+                    </div>
+
+                <h3>協作的議題</h3>
+                <div class="bodycopy section-space">
+                        適合協作的議題通常有「跨部會政策協調」、「資訊系統建置」、「政策前期意見收集」等三種型態，並具備「多元意見分歧」、「議題內容跨多個部會」等性質。比較抽象的價值辯論則較不適合在協作會議的架構下討論。
+                </div>
+
+                <h3>協作會議的挑戰 </h3>
+                <div class="bodycopy section-space">
+                        協作會議不能保證討論出來的結果一定會被採納，或是產出一定有大幅進展。換句話說，協作會議重視的是「各方對話和產出解法的過程」。
+                </div>
+            </div>
+            <div class="col-lg-5 no-padding">
+                    <img class="img-fluid" src="https://via.placeholder.com/650x1250" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" style="background:rgb(88,159,240)">
+    <div class="container">
+        <div class="row justify-content-around text-center">
+            <div class="col-lg-8 no-padding">
+                <h1 class="section-space">如何辦一場協作會議？</h1>
+                <div class="bodycopy">舉辦協作會議不用需要很浩大的工程，但有一定的架構可以參考。我們鼓勵公部門朋友自行運用本站提供的
+                    <a href="/meeting-process" style="color:black">流程</a>
+                    與
+                    <a href="/tools" style="color:black">工具</a>
+                    ，自主辦理協作會議，以深入討論議題並與多方利害關係人共同尋求解法。</div>
+            </div>
+        </div>
     </div>
 </div>
