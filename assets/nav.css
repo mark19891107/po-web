@@ -1,4 +1,4 @@
-.navbar {
+#nav.navbar {
     height: 70px;
     padding-left: 45px;
     padding-right: 45px;
@@ -15,4 +15,40 @@
     margin: 0px 10px;
     height: 70px;
     color: black;
+}
+
+#nav2.navbar-light .navbar-toggler {
+    border-color: #00000000;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#nav2 .nav-link {
+    font-size: 21px;
+    color: black;
+    flex: 1;
+    border-bottom: solid 1px black;
+    display: flex;
+}
+
+
+#nav2 .nav-link.bold{
+    border-bottom: solid 5px black;
+}
+
+#nav2 .nav-link.light{
+    border-bottom: solid 3px black;
+}
+
+#nav2 ul.navbar-nav{
+    height: calc(100vh - 56px);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+#nav2 .nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

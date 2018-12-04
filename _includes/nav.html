@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top d-md-none d-sm-none d-sm-none d-lg-flex d-xl-flex" id="nav">
     <a class="navbar-brand" href="/">PO</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -24,33 +24,80 @@
                     <a class="dropdown-item" href="/tools">會議工具</a>
                 </div>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#">EN</a>
-            </li>
+            </li> -->
         </ul>
     </div>
 </nav>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none d-xl-none" id="nav2">
+    <a class="navbar-brand" href="/">EN</a>
+    <a class="navbar-brand" href="/">PO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+
+        <div class="container">
+            <ul class="navbar-nav">
+                <a class="nav-link bold" href="/opengov">
+                    <li class="nav-item">
+                        開放政府
+                    </li>
+                </a>
+                <a class="nav-link bold" href="/po">
+                    <li class="nav-item">
+                        聯絡人要點
+                    </li>
+                </a>
+                <a class="nav-link light" href="/tools">
+                    <li class="nav-item">
+                        協作會議
+                    </li>
+                </a>
+                <a class="nav-link" href="/tools">
+                    <li class="nav-item">
+                        會議流程
+                    </li>
+                </a>
+
+                <a class="nav-link" href="/tools">
+                    <li class="nav-item">
+                        聯絡人要點
+                    </li>
+                </a>
+
+                <a class="nav-link bold" href="/tools">
+                    <li class="nav-item">
+                        會議工具
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
 
 
 <script>
     var scrollVal;
     $(function () {
         $(window).scroll(function () {
-            if ($(this).scrollTop() < 70) 
-            {
-                $("#nav").css("top","-"+$(this).scrollTop()+"px");
-                $("#nav").css("background","#FFFFFF00");
+            if ($(this).scrollTop() < 70) {
+                $("#nav").css("top", "-" + $(this).scrollTop() + "px");
+                $("#nav").css("background", "#FFFFFF00");
             }
-            else if($(this).scrollTop() > 70 && $(this).scrollTop() < 500)
-            {
-                $("#nav").css("top","-70px");
-                $("#nav").css("transition","top 0.2s ease")
+            else if ($(this).scrollTop() > 70 && $(this).scrollTop() < 500) {
+                $("#nav").css("top", "-70px");
+                $("#nav").css("transition", "top 0.2s ease")
             }
-            else
-            {
-                $("#nav").css("top","0px");
-                $("#nav").css("background","#FFFFFF");
+            else {
+                $("#nav").css("top", "0px");
+                $("#nav").css("background", "#FFFFFF");
             }
         });
     });
