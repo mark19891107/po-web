@@ -1,14 +1,47 @@
-.footer{
-    height: 300px;
-    padding-top: 100px;
+.footer {
     background: #1838c5;
+    height: 400px;
+    padding-top: 60px;
 }
 
-.footer .logo{
+.footer .logo {
     height: 30px;
     width: auto;
+    margin-bottom: 40px;
 }
 
-.footer p,.footer a,.footer a:hover{
+.footer p,
+.footer a,
+.footer a:hover {
     color: #f2b9c5;
 }
+
+.footer .icon {
+    height: 30px;
+    width: 30px;
+    border: solid 1px #f2b9c5;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+
+@media (min-width: 576px) {}
+
+/* // Small devices (landscape phones, less than 768px) */
+
+@media (min-width: 768px) {
+    .footer {
+        height: 400px;
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer {
+        height: 300px;
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 1200px) {}
